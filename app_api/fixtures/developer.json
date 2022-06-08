@@ -1,0 +1,58 @@
+[
+    {
+        "model": "app_api.developer",
+        "pk": 1,
+        "fields": {
+            "first_name": "Manni",
+            "last_name": "Ferrari",
+            "nickname": "Manni the Man",
+            "email": "me@me.com",
+            "user": 1
+        }
+    },
+    {
+        "model": "app_api.developer",
+        "pk": 2,
+        "fields": {
+            "first_name": "Butch",
+            "last_name": "Cavender",
+            "nickname": "Sundance",
+            "email": "you@you.com",
+            "user": 2
+        }
+    },
+    {
+        "model": "app_api.developer",
+        "pk": 3,
+        "fields": {
+            "first_name": "Paige",
+            "last_name": "Jones",
+            "nickname": "Dopey",
+            "email": "us@us.net",
+            "user": 3
+        }
+    },
+    {
+        "model": "app_api.developer",
+        "pk": 4,
+        "fields": {
+            "first_name": "Boris",
+            "last_name": "LeBook",
+            "nickname": "The Reader",
+            "email": "user@deltek.ru",
+            "user": 4
+        }
+    },
+    {
+        "model": "app_api.developer",
+        "pk": 5,
+        "fields": {
+            "first_name": "Darius",
+            "last_name": "Carter",
+            "nickname": "Anonymous",
+            "email": "darius@stream.com",
+            "user": 5
+        }
+    }
+
+]

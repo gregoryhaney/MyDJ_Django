@@ -1,0 +1,219 @@
+[
+    {
+        "model": "app_api.techtag",
+        "pk": 1,
+        "fields": {
+            "tech_title": "Angular"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 2,
+        "fields": {
+            " tech_title": "Python"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 3,
+        "fields": {
+            "tech_title": "Django"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 4,
+        "fields": {
+            "tech_title": "JavaScript"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 5,
+        "fields": {
+            "tech_title": "React"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 6,
+        "fields": {
+            "tech_title": "Linux"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 7,
+        "fields": {
+            "tech_title": "Windows"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 8,
+        "fields": {
+            "tech_title": "AWS"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 9,
+        "fields": {
+            "tech_title": "C"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 10,
+        "fields": {
+            "tech_title": "C#"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 11,
+        "fields": {
+            "tech_title": "C++"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 12,
+        "fields": {
+            "tech_title": "Java"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 13,
+        "fields": {
+            "tech_title": "Flutter"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 14,
+        "fields": {
+            "tech_title": "Dart"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 15,
+        "fields": {
+            "tech_title": "Go"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 16,
+        "fields": {
+            "tech_title": ".NET"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 17,
+        "fields": {
+            "tech_title": "VSCode"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 18,
+        "fields": {
+            "tech_title": "PowerShell"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 19,
+        "fields": {
+            "tech_title": "Bash"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 20,
+        "fields": {
+            "tech_title": "Kubernetes"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 21,
+        "fields": {
+            "tech_title": "Containers"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 22,
+        "fields": {
+            "tech_title": "SQL"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 23,
+        "fields": {
+            "tech_title": "Foil"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 24,
+        "fields": {
+            "tech_title": "Swift"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 25,
+        "fields": {
+            "tech_title": "HTML"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 26,
+        "fields": {
+            "tech_title": "CSS"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 27,
+        "fields": {
+            "tech_title": "Flexbox"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 28,
+        "fields": {
+            "tech_title": "RegEx"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 29,
+        "fields": {
+            "tech_title": "R"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 30,
+        "fields": {
+            "tech_title": "JSON"
+        }
+    },
+    {
+        "model": "app_api.techtag",
+        "pk": 31,
+        "fields": {
+            "tech_title": "Php"
+        }
+    }
+]

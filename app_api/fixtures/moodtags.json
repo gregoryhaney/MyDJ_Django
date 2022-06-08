@@ -1,0 +1,156 @@
+[
+    {
+        "model": "app_api.moodtag",
+        "pk": 1,
+        "fields": {
+            "tag_title": "sad"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 2,
+        "fields": {
+            "tag_title": "happy"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 3,
+        "fields": {
+            "tag_title": "glad"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 4,
+        "fields": {
+            "tag_title": "confused"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 5,
+        "fields": {
+            "tag_title": "excited"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 6,
+        "fields": {
+            "tag_title": "scared"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 7,
+        "fields": {
+            "tag_title": "anxious"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 8,
+        "fields": {
+            "tag_title": "brazen"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 9,
+        "fields": {
+            "tag_title": "bold"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 10,
+        "fields": {
+            "tag_title": "fearful"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 11,
+        "fields": {
+            "tag_title": "hostile"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 12,
+        "fields": {
+            "tag_title": "glum"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 13,
+        "fields": {
+            "tag_title": "lonely"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 14,
+        "fields": {
+            "tag_title": "heartfelt"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 15,
+        "fields": {
+            "tag_title": "tense"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 16,
+        "fields": {
+            "tag_title": "serious"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 17,
+        "fields": {
+            "tag_title": "shy"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 18,
+        "fields": {
+            "tag_title": "silly"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 19,
+        "fields": {
+            "tag_title": "pessimistic"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 20,
+        "fields": {
+            "tag_title": "nervous"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 21,
+        "fields": {
+            "tag_title": "playful"
+        }
+    },
+    {
+        "model": "app_api.moodtag",
+        "pk": 22,
+        "fields": {
+            "tag_title": "reflective"
+        }
+    }
+]
