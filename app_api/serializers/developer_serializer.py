@@ -11,5 +11,6 @@ class DeveloperSerializer(serializers.ModelSerializer):
         model = Developer
         fields = ('id', 'first_name', 'last_name',
                   'nickname', 'email', 'user')
+        depth = 1
         
     

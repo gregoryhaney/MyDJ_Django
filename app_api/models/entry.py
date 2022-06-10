@@ -7,4 +7,5 @@ class Entry(models.Model):
     is_public = models.BooleanField()
     techtag = models.IntegerField()
     moodtag = models.IntegerField()
-    developer = models.ForeignKey("Developer", on_delete=models.CASCADE)
+    developer = models.ForeignKey("Developer", 
+            on_delete=models.CASCADE, related_name='developer')

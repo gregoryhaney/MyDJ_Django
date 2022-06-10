@@ -7,3 +7,4 @@ class Developer(models.Model):
     nickname = models.CharField(max_length=50)
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     email = models.CharField(max_length=75)
+    

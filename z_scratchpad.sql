@@ -87,3 +87,8 @@ VALUES(13,"2021-04-04T13:24:27.144Z","Deep dive on React components",
 "Dolores sit tempore qui itaque quisquam est sit non. Dolor reprehenderit sit sed accusantium et. Non nisi et ipsa quasi hic et dolor. Odit sint omnis quibusdam assumenda. Quidem sed ea illo ea qui qui. Nesciunt ipsam omnis laboriosam sit et nobis dignissimos. Architecto quaerat magni soluta earum.",
 false,2,16,3);
 
+
+
+UPDATE app_api_entry
+SET developer_id = 4
+WHERE id = 3

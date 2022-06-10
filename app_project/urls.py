@@ -18,14 +18,14 @@ from django.urls import path
 from django.conf.urls import include
 from rest_framework import routers
 from app_api.views import register_user, login_user
-
-from app_api.views import EntryView, MoodtagView, TechtagView
+from app_api.views import EntryView, MoodtagView, TechtagView, DeveloperView
 
 router = routers.DefaultRouter(trailing_slash=False)
 
 router.register(r'entries', EntryView, 'entry')
 router.register(r'moodtags', MoodtagView, 'moodtag')
 router.register(r'techtags', TechtagView, 'techtag')
+router.register(r'developers', DeveloperView, 'developer')
 
 urlpatterns = [
     path('admin/', admin.site.urls),

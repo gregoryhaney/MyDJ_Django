@@ -4,7 +4,7 @@ from urllib import request
 from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
-from rest_framework import serializers, status
+from rest_framework import status
 from app_api.serializers import TechtagSerializer
 from app_api.models import Techtag
 
@@ -34,6 +34,26 @@ class TechtagView(ViewSet):
 
 
 
-
-    #   SERIALIZERS MOVED TO THEIR OWN DIR
-
+    # Create new Techtag
+    def create(self, request):
+        techtag = Techtag.objects.create(
+            tech_title = request.data["tech_title"]
+        )
+        serializer = TechtagSerializer(techtag)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+        
+    
+    # Update/Edit a Techtag
+    def update(self, request, pk):
+        techtag = Techtag.objects.get(pk=pk)
+        serializer = TechtagSerializer(techtag, data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+        
+    
+    # Delete Techtag based on primary key
+    def destroy(self, request, pk):
+        techtag = Techtag.objects.get(pk=pk)
+        techtag.delete()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
