@@ -11,3 +11,4 @@ class MoodtagSerializer(serializers.ModelSerializer):
     class Meta:
         model = Moodtag
         fields = ('id', 'tag_title')
+        depth = 1

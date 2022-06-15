@@ -5,10 +5,12 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import status
+from tomlkit import datetime
 from app_api.serializers import EntrySerializer, UpdateEntrySerializer
-from app_api.models import Entry, techtag
+from app_api.models import Entry
+from datetime import datetime
 
-
+now = datetime.now()
 
 class EntryView(ViewSet):
     """ViewSet for EntryView - get the collection of
@@ -33,22 +35,26 @@ class EntryView(ViewSet):
         except Entry.DoesNotExist as ex:
             return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
 
-
+    # TODO:  un-hardcode 'developer_id' in the CREATE method
+    # and replace with current user/developer id.
 
     # Create new Entry
     def create(self, request):
+                
         entry = Entry.objects.create(
+            datetime = now,
             subject = request.data["subject"],
             body = request.data["body"],
             is_public = request.data["is_public"],
             techtag = request.data["techtag"],
-            moodtag = request.data["moodtag"]            
+            moodtag = request.data["moodtag"],
+            developer_id = 6           
         )
         serializer = EntrySerializer(entry)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
         
     
-    # Update/Edit a Entry
+    # Update/Edit an Entry
     def update(self, request, pk):
         entry = Entry.objects.get(pk=pk)
         serializer = EntrySerializer(entry, data=request.data)

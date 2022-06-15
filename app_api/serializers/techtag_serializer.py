@@ -8,3 +8,5 @@ class TechtagSerializer(serializers.ModelSerializer):
     class Meta:
         model = Techtag
         fields = ('id', 'tech_title')
+        depth = 1
+        

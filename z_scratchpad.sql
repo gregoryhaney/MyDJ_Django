@@ -89,6 +89,19 @@ false,2,16,3);
 
 
 
-UPDATE app_api_entry
-SET developer_id = 4
-WHERE id = 3
+UPDATE auth_user
+SET last_name = "Wharf",
+    first_name = "Sheldon",
+    email = "sw1445@starfleet.net"
+WHERE id = 6
+
+
+
+DELETE FROM app_api_entry WHERE id=17;
+
+
+
+
+INSERT INTO app_api_developer
+VALUES(6,"Wharf","Sheldon",
+"KlingMeister", "ws1445@starfleet.net", 6)
