@@ -60,7 +60,7 @@ INSERT INTO app_api_techtag
 VALUES(31,"Php");
 
 
-DROP TABLE app_api_entry
+DROP TABLE app_api_entry_moodtag
 
 CREATE TABLE app_api_entry (
     id INT PRIMARY KEY,
@@ -72,6 +72,21 @@ CREATE TABLE app_api_entry (
     moodtag INT,
     developer INT
     );
+
+DROP TABLE app_api_entry_techtag;
+DROP TABLE app_api_entry_moodtag;
+
+CREATE TABLE app_api_entry_techtag (
+    id integer PRIMARY KEY NOT NULL,
+    entry_id integer,
+    techtag_id integer);
+
+CREATE TABLE app_api_entry_moodtag (
+    id integer PRIMARY KEY NOT NULL,
+    entry_id integer,
+    moodtag_id integer);
+
+
 
 
 INSERT INTO app_api_entry
@@ -102,6 +117,15 @@ DELETE FROM app_api_entry WHERE id=17;
 
 
 
-INSERT INTO app_api_developer
-VALUES(6,"Wharf","Sheldon",
-"KlingMeister", "ws1445@starfleet.net", 6)
+INSERT INTO app_api_entry_techtag VALUES(15,1,5);
+INSERT INTO app_api_entry_techtag VALUES(16,1,10);
+INSERT INTO app_api_entry_techtag VALUES(3,3,38);
+INSERT INTO app_api_entry_techtag VALUES(4,4,39);
+
+INSERT INTO app_api_entry_moodtag VALUES(1,1,1);
+INSERT INTO app_api_entry_moodtag VALUES(2,2,2);
+INSERT INTO app_api_entry_moodtag VALUES(3,3,25);
+INSERT INTO app_api_entry_moodtag VALUES(4,4,26);
+
+
+DELETE FROM app_api_entry_techtag WHERE id < 7

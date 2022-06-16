@@ -5,7 +5,7 @@ class Entry(models.Model):
     subject = models.CharField(max_length=150)
     body = models.CharField(max_length=8000)
     is_public = models.BooleanField()
-    techtag = models.ForeignKey('Techtag', on_delete=models.CASCADE)
-    moodtag = models.ForeignKey('Moodtag', on_delete=models.CASCADE)
+    techtag = models.ManyToManyField('Techtag')
+    moodtag = models.ManyToManyField('Moodtag')
     developer = models.ForeignKey("Developer", 
             on_delete=models.CASCADE, related_name='developer')
