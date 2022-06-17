@@ -1,4 +1,4 @@
-"""Views module to handle request about Techtags"""
+"""Views module to handle requests about Techtags"""
 
 from urllib import request
 from django.http import HttpResponseServerError

@@ -8,4 +8,13 @@ class Entry(models.Model):
     techtag = models.ManyToManyField('Techtag')
     moodtag = models.ManyToManyField('Moodtag')
     developer = models.ForeignKey("Developer", 
-            on_delete=models.CASCADE, related_name='developer')
+                on_delete=models.CASCADE, 
+                related_name='developer')
+    
+    
+    # 'ordering' returns the objects sorted by the
+    # datetime field. Pre-pending the minus sign
+    # causes it to be newest date first.
+    
+    class Meta:
+        ordering=['-datetime']

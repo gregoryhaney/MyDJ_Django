@@ -1,4 +1,4 @@
-"""Views module to handle request about Moodtags"""
+"""Views module to handle requests about Moodtags"""
 
 from urllib import request
 from django.http import HttpResponseServerError

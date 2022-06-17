@@ -1,10 +1,9 @@
-"""Views module to handle request about Journal Entries"""
+"""Views module to handle requests about Journal Entries"""
 
 from urllib import request
 from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
-from django.contrib.auth.models import User
 from rest_framework import status
 from tomlkit import datetime
 from app_api.serializers import EntrySerializer, UpdateEntrySerializer
@@ -38,11 +37,6 @@ class EntryView(ViewSet):
             return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
 
 
-
-
-    # TODO:  un-hardcode 'developer_id' in the CREATE method
-    # and replace with current user/developer id.
-
     # Create new Entry
     def create(self, request):
         # current_user = request.auth.user.id          
@@ -52,12 +46,13 @@ class EntryView(ViewSet):
             subject = request.data["subject"],
             body = request.data["body"],
             is_public = request.data["is_public"],
-            techtag = request.data["techtag"],
-            moodtag = request.data["moodtag"],
-            developer_id = 6
+            developer_id = request.data["developer"]
         )
-        # entry.techtag.add(request.data["techtag"])
-        # entry.moodtag.add(request.data["moodtag"])
+        
+        # entry.developer.set(request.data[current_user])
+        entry.techtag.set(request.data["techtag"])
+        entry.moodtag.set(request.data["moodtag"])
+            
         serializer = EntrySerializer(entry)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
         
@@ -67,6 +62,13 @@ class EntryView(ViewSet):
     # Update/Edit an Entry
     def update(self, request, pk):
         entry = Entry.objects.get(pk=pk)
+        entry.subject = request.data["subject"]
+        entry.body = request.data["body"]
+        entry.is_public = request.data["is_public"]
+        entry.techtag.add(request.data["techtag"])
+        entry.moodtag.add(request.data["moodtag"])
+        entry.save()
+        
         serializer = EntrySerializer(entry, data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()

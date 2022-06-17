@@ -117,15 +117,26 @@ DELETE FROM app_api_entry WHERE id=17;
 
 
 
-INSERT INTO app_api_entry_techtag VALUES(15,1,5);
-INSERT INTO app_api_entry_techtag VALUES(16,1,10);
-INSERT INTO app_api_entry_techtag VALUES(3,3,38);
-INSERT INTO app_api_entry_techtag VALUES(4,4,39);
+INSERT INTO app_api_entry_techtag VALUES(31,8,12);
+INSERT INTO app_api_entry_techtag VALUES(32,10,13);
+INSERT INTO app_api_entry_techtag VALUES(33,11,38);
+INSERT INTO app_api_entry_techtag VALUES(34,8,19);
+INSERT INTO app_api_entry_techtag VALUES(35,10,21);
+INSERT INTO app_api_entry_techtag VALUES(36,11,29);
+INSERT INTO app_api_entry_techtag VALUES(37,12,1);
+INSERT INTO app_api_entry_techtag VALUES(38,12,16);
+INSERT INTO app_api_entry_techtag VALUES(39,31,6);
+INSERT INTO app_api_entry_techtag VALUES(40,40,20);
 
-INSERT INTO app_api_entry_moodtag VALUES(1,1,1);
-INSERT INTO app_api_entry_moodtag VALUES(2,2,2);
-INSERT INTO app_api_entry_moodtag VALUES(3,3,25);
-INSERT INTO app_api_entry_moodtag VALUES(4,4,26);
+INSERT INTO app_api_entry_moodtag VALUES(28,8,16);
+INSERT INTO app_api_entry_moodtag VALUES(29,10,3);
+INSERT INTO app_api_entry_moodtag VALUES(30,11,19);
+INSERT INTO app_api_entry_moodtag VALUES(31,8,3);
+INSERT INTO app_api_entry_moodtag VALUES(32,10,16);
+INSERT INTO app_api_entry_moodtag VALUES(33,11,21);
+INSERT INTO app_api_entry_moodtag VALUES(34,12,2);
+INSERT INTO app_api_entry_moodtag VALUES(36,12,9);
+INSERT INTO app_api_entry_moodtag VALUES(35,40,16);
 
 
 DELETE FROM app_api_entry_techtag WHERE id < 7

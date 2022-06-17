@@ -44,7 +44,7 @@ def register_user(request):
     # TODO: this is only adding the username and password, if you want to add in more user fields like first and last name update this code
     new_user = User.objects.create_user(
         username=request.data['username'],
-        password=request.data['password'],
+        password=request.data['password']
     )
 
     # TODO: If you're using a model with a 1 to 1 relationship to the django user, create that object here

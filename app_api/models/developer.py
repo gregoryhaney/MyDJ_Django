@@ -7,4 +7,11 @@ class Developer(models.Model):
     nickname = models.CharField(max_length=50)
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     email = models.CharField(max_length=75)
+        
     
+    # 'ordering' returns the objects sorted by the
+    # first_name field in alphabetic order.
+    # ASC is the default.
+    
+    class Meta:
+        ordering=['first_name']

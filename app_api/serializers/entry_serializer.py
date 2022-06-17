@@ -1,8 +1,6 @@
 from rest_framework import serializers
 from app_api.models import Entry
 
-
-
 class EntrySerializer(serializers.ModelSerializer):
         
     """JSON serializer for entry

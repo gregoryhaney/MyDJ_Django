@@ -1,4 +1,4 @@
-"""Views module to handle request about Developers"""
+"""Views module to handle requests about Developers"""
 
 from urllib import request
 from django.http import HttpResponseServerError
@@ -8,7 +8,6 @@ from rest_framework import serializers, status
 from app_api.models.developer import Developer
 from app_api.serializers import DeveloperSerializer
 from app_api.models import Entry
-
 
 
 class DeveloperView(ViewSet):
@@ -34,10 +33,3 @@ class DeveloperView(ViewSet):
         except Developer.DoesNotExist as ex:
             return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
 
-
-
-
-    #   SERIALIZERS MOVED TO THEIR OWN DIR
-
-
-    
