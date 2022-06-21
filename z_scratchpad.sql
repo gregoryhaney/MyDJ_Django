@@ -1,63 +1,24 @@
+
 INSERT INTO app_api_techtag 
-VALUES(2,"Python");
+VALUES(43,"Blockchain");
 INSERT INTO app_api_techtag 
-VALUES(3,"Django");
+VALUES(44,"Predictive Analytics");
 INSERT INTO app_api_techtag 
-VALUES(4,"JavaScript");
+VALUES(45,"AI");
 INSERT INTO app_api_techtag 
-VALUES(5,"React");
+VALUES(46,"ML");
 INSERT INTO app_api_techtag 
-VALUES(6,"Linux");
+VALUES(47,"Edge Computing");
 INSERT INTO app_api_techtag 
-VALUES(7,"Windows");
+VALUES(48,"VR");
 INSERT INTO app_api_techtag 
-VALUES(8,"AWS");
+VALUES(49,"AR");
 INSERT INTO app_api_techtag 
-VALUES(9,"C");
+VALUES(50,"5G");
 INSERT INTO app_api_techtag 
-VALUES(10,"C#");
+VALUES(51,"Cybersecurity");
 INSERT INTO app_api_techtag 
-VALUES(11,"C++");
-INSERT INTO app_api_techtag 
-VALUES(12,"Java");
-INSERT INTO app_api_techtag 
-VALUES(13,"Flutter");
-INSERT INTO app_api_techtag 
-VALUES(14,"Dart");
-INSERT INTO app_api_techtag 
-VALUES(15,"Go");
-INSERT INTO app_api_techtag 
-VALUES(16,".NET");
-INSERT INTO app_api_techtag 
-VALUES(17,"VSCode");
-INSERT INTO app_api_techtag 
-VALUES(18,"PowerShell");
-INSERT INTO app_api_techtag 
-VALUES(19,"Bash");
-INSERT INTO app_api_techtag 
-VALUES(20,"Kubernetes");
-INSERT INTO app_api_techtag 
-VALUES(21,"Containers");
-INSERT INTO app_api_techtag 
-VALUES(22,"SQL");
-INSERT INTO app_api_techtag 
-VALUES(23,"FOIL");
-INSERT INTO app_api_techtag 
-VALUES(24,"Swift");
-INSERT INTO app_api_techtag 
-VALUES(25,"HTML");
-INSERT INTO app_api_techtag 
-VALUES(26,"CSS");
-INSERT INTO app_api_techtag 
-VALUES(27,"Flexbox");
-INSERT INTO app_api_techtag 
-VALUES(28,"RegEx");
-INSERT INTO app_api_techtag 
-VALUES(29,"R");
-INSERT INTO app_api_techtag 
-VALUES(30,"JSON");
-INSERT INTO app_api_techtag 
-VALUES(31,"Php");
+VALUES(52,"3d Printing");
 
 
 DROP TABLE app_api_entry_moodtag
@@ -116,7 +77,7 @@ WHERE id = 6
 
 
 
-DELETE FROM app_api_entry WHERE id=17;
+DELETE FROM app_api_entry WHERE id=16;
 
 
 
@@ -157,3 +118,12 @@ INSERT INTO app_api_developer VALUES(11,"Reg","Pots","PottyMouth","pr9@pr.biz",1
 
 DELETE FROM app_api_developer WHERE id > 6;
 DELETE FROM app_api_entry_techtag WHERE id < 7
+
+
+
+
+
+
+
+
+
