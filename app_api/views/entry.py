@@ -39,7 +39,7 @@ class EntryView(ViewSet):
 
     # Create new Entry
     def create(self, request):
-        # current_user = request.auth.user.id          
+        current_user = request.auth.user.id          
                 
         entry = Entry.objects.create(
             datetime = now,
@@ -50,10 +50,13 @@ class EntryView(ViewSet):
         )
         
         # entry.developer.set(request.data[current_user])
+        entry.save()
         entry.techtag.set(request.data["techtag"])
         entry.moodtag.set(request.data["moodtag"])
-            
-        serializer = EntrySerializer(entry)
+        
+        serializer = EntrySerializer(entry, data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
         return Response(serializer.data, status=status.HTTP_201_CREATED)
         
         
@@ -65,8 +68,8 @@ class EntryView(ViewSet):
         entry.subject = request.data["subject"]
         entry.body = request.data["body"]
         entry.is_public = request.data["is_public"]
-        entry.techtag.add(request.data["techtag"])
-        entry.moodtag.add(request.data["moodtag"])
+        entry.techtag.set(request.data["techtag"])
+        entry.moodtag.set(request.data["moodtag"])
         entry.save()
         
         serializer = EntrySerializer(entry, data=request.data)

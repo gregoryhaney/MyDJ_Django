@@ -86,6 +86,10 @@ CREATE TABLE app_api_entry_moodtag (
     entry_id integer,
     moodtag_id integer);
 
+CREATE TABLE app_api_user_developer (
+    id integer PRIMARY KEY NOT NULL,
+    user_id integer NOT NULL,
+    developer_id integer NOT NULL);
 
 
 
@@ -139,4 +143,17 @@ INSERT INTO app_api_entry_moodtag VALUES(36,12,9);
 INSERT INTO app_api_entry_moodtag VALUES(35,40,16);
 
 
+INSERT INTO app_api_user_developer VALUES(7,7,7);
+INSERT INTO app_api_user_developer VALUES(8,8,8);
+INSERT INTO app_api_user_developer VALUES(9,9,9);
+INSERT INTO app_api_user_developer VALUES(10,10,10);
+INSERT INTO app_api_user_developer VALUES(11,1,1);
+
+INSERT INTO app_api_developer VALUES(7,"Smith","Jane","Janie","js@me.co",7);
+INSERT INTO app_api_developer VALUES(8,"Bonds","Barry","Bae","bb@k.net",8);
+INSERT INTO app_api_developer VALUES(9,"Mahal","Taj","TeeK","taj@u.us",9);
+INSERT INTO app_api_developer VALUES(10,"Yard","Cort","Hoops","cy2@cy.me",10);
+INSERT INTO app_api_developer VALUES(11,"Reg","Pots","PottyMouth","pr9@pr.biz",11);
+
+DELETE FROM app_api_developer WHERE id > 6;
 DELETE FROM app_api_entry_techtag WHERE id < 7
