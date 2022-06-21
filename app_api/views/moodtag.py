@@ -8,8 +8,6 @@ from rest_framework import status
 from app_api.serializers import MoodtagSerializer
 from app_api.models import Moodtag
 
-
-
 class MoodtagView(ViewSet):
     """ViewSet for MoodtagView - get the collection of moodtags from DB
         Returns:

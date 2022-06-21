@@ -8,8 +8,6 @@ from rest_framework import status
 from app_api.serializers import TechtagSerializer
 from app_api.models import Techtag
 
-
-
 class TechtagView(ViewSet):
     """ViewSet for TechtagView - get the collection of techtags from DB
         Returns:
