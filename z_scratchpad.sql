@@ -75,7 +75,15 @@ SET last_name = "Wharf",
     email = "sw1445@starfleet.net"
 WHERE id = 6
 
+UPDATE app_api_entry
+SET subject = "My first month as a new developer",
+    body = "Aut sed a officia est repellat. Voluptatibus quia aut sequi dignissimos rerum. Eum ipsum nihil praesentium. Consequatur et sit architecto dicta et."
+WHERE id = 2
 
+
+
+
+Aut sed a officia est repellat. Voluptatibus quia aut sequi dignissimos rerum. Eum ipsum nihil praesentium. Consequatur et sit architecto dicta et.
 
 DELETE FROM app_api_entry WHERE id=16;
 
@@ -91,7 +99,7 @@ INSERT INTO app_api_entry_techtag VALUES(36,11,29);
 INSERT INTO app_api_entry_techtag VALUES(37,12,1);
 INSERT INTO app_api_entry_techtag VALUES(38,12,16);
 INSERT INTO app_api_entry_techtag VALUES(39,31,6);
-INSERT INTO app_api_entry_techtag VALUES(40,40,20);
+INSERT INTO app_api_entry_techtag VALUES(64,6,14);
 
 INSERT INTO app_api_entry_moodtag VALUES(28,8,16);
 INSERT INTO app_api_entry_moodtag VALUES(29,10,3);
@@ -101,7 +109,7 @@ INSERT INTO app_api_entry_moodtag VALUES(32,10,16);
 INSERT INTO app_api_entry_moodtag VALUES(33,11,21);
 INSERT INTO app_api_entry_moodtag VALUES(34,12,2);
 INSERT INTO app_api_entry_moodtag VALUES(36,12,9);
-INSERT INTO app_api_entry_moodtag VALUES(35,40,16);
+INSERT INTO app_api_entry_moodtag VALUES(60,6,46);
 
 
 INSERT INTO app_api_user_developer VALUES(7,7,7);
