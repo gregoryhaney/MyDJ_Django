@@ -10,7 +10,7 @@
         "model": "app_api.techtag",
         "pk": 2,
         "fields": {
-            " tech_title": "Python"
+            "tech_title": "Python"
         }
     },
     {
